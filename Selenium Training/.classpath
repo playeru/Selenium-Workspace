@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="C:/Users/mihai.vancea/Downloads/selenium-2.42.2/selenium-java-2.42.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/Users/mihai.vancea/Downloads/file-utils.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mihai.vancea/Downloads/commons-io-2.4/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mihai.vancea/Downloads/commons-io-2.4/commons-io-2.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mihai.vancea/Downloads/commons-io-2.4/commons-io-2.4-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mihai.vancea/Downloads/commons-io-2.4/commons-io-2.4-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mihai.vancea/Downloads/commons-io-2.4/commons-io-2.4-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mihai.vancea/Downloads/selenium-2.42.2/selenium-java-2.42.2-srcs.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mihai.vancea/Downloads/selenium-server-standalone-2.39.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
