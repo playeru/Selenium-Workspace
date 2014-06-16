@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="deletecookie" project="Selenium Training" tests="2" started="2" failures="0" errors="0" ignored="1">
+  <testsuite name="deletecookie" time="46.663">
+    <testcase name="deleteAllCookiesExample" classname="deletecookie" time="0.001" ignored="true"/>
+    <testcase name="deleteCookieNamedExample" classname="deletecookie" time="46.662"/>
+  </testsuite>
+</testrun>
