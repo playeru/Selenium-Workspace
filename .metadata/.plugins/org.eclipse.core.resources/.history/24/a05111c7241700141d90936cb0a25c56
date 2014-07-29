@@ -1,0 +1,8 @@
+
+public class Human {
+	
+	private Name name;
+	private Surname surname;
+	private Birthdate birthdate;
+
+}

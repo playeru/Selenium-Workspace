@@ -1,0 +1,7 @@
+
+public class Teacher extends Human {
+	
+	private Address address;
+	private Skill skill;
+
+}

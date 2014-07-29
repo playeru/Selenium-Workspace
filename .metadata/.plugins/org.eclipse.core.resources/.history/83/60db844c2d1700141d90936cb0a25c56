@@ -1,0 +1,10 @@
+
+public class Classroom {
+	
+	private String classroom;
+	
+	public Classroom() {
+		classroom = this.classroom;
+	}
+
+}

@@ -10,7 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 // http://seleniumeasy.com/selenium-tutorials/take-screenshot-with-selenium-webdriver
-//test modify 07/07/2014
+// test modify 07/07/2014
  
 
     public class takeScreenShotExample{

@@ -1,0 +1,12 @@
+import java.util.Date;
+
+
+public class Birthdate {
+	
+	public Date birthdate;
+	
+	public Birthdate(Date birthdate) {
+		this.birthdate=birthdate;
+	}
+
+}
