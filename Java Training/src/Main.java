@@ -16,13 +16,13 @@ public class Main {
 		
 		Calendar cal = Calendar.getInstance();
 	    cal.set(2000, 1, 1);
+	    Calendar birthdate = cal;
+		Integer score = 3;
+		String classroom = "java101";
 	    
 		// creating and adding student1
 		String name = "burak";
 		String surname = "sarac";	
-		Calendar birthdate = cal;
-		Integer score = 3;
-		String classroom = "java101";
 		Student student1 = new Student(name, surname, birthdate, score, classroom);
 		students.add(student1);
 
@@ -51,11 +51,12 @@ public class Main {
 		students.add(student5);
 						
 
-		
+		// prompting user to enter name and surname from command line
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		System.out.println("\nEnter the name: ");
 		String nameprompt = null;
+		String surnameprompt = null;
 		try {
 			nameprompt = br.readLine();
 		} catch (IOException e) {
@@ -64,49 +65,33 @@ public class Main {
 		}
 		System.out.println("\nEnter the surname: ");
 		try {
-			String surnameprompt = br.readLine();
+			surnameprompt = br.readLine();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
+		Boolean isFound = false;
 		
-
+		// checking is student with name and surname from prompt is in list of students
+		
 		for (Student s : students) {
-			System.out.println(nameprompt + " " + s.name);
-			if (nameprompt==s.name)  {
+			
+			if (nameprompt.equals(s.name) && surnameprompt.equals(s.surname))  {
 				System.out.println("yes");
-			} else {
-				System.out.println("no");
+				isFound=true;
+				break;
 			}
 		}
 		
+		// throwing exception if student not found
 		
-
-		//
-		//then create a Main class with main method. After create an array of students and add those students:
-
-		//	Student1: name: burak surname:sarac bdate: 01.01.2000 score:3, classroom:java101
-
-
-		//	Student2: name: tomas surname:lucovic bdate: 01.01.2000 score:3, classroom:java101
-
-
-		//	Student3: name: jan surname:havranek bdate: 01.01.2000 score:3, classroom:java101
-
-
-		//	Student4: name: matej surname:duras bdate: 01.01.2000 score:3, classroom:java101
-
-
-		//	Student5: name: viktor surname:tymoshchuk bdate: 01.01.2000 score:3, classroom:java101
-
-
-		//	when you write 3 class, then ask user to enter student name and surname, if student doesnt exist throw a nullpointer exception
-
-
-		//	If you need anything just please let me know
-
-		
+		if(isFound==false)
+	      {
+	           throw new NullPointerException("return value is null at method AAA");
+	      } else {
+	    	  System.out.println("Student was found");
+	}
 		
 		
 	}
