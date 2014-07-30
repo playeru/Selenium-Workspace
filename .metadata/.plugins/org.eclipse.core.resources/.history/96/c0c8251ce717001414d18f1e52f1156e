@@ -1,0 +1,15 @@
+
+public class Human {
+	
+	protected Name name;
+	private Surname surname;
+	private Birthdate birthdate;
+	
+	public Human(Name name, Surname surname, Birthdate birthdate) {
+		this.name=name;
+		this.surname=surname;
+		this.birthdate=birthdate;
+	}
+	
+
+}

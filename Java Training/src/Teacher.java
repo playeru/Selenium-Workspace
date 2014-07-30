@@ -1,10 +1,12 @@
+import java.util.Calendar;
+
 
 public class Teacher extends Human {
 	
-	private Address address;
-	private Skill skill;
+	private String address;
+	private String skill;
 	
-	public Teacher(Name name, Surname surname, Birthdate birthdate, Address address, Skill skill) {
+	public Teacher(String name, String surname, Calendar birthdate, String address, String skill) {
 		super(name, surname, birthdate);
 		this.address=address;
 		this.skill=skill;

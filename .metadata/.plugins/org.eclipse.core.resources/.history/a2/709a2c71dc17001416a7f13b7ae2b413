@@ -1,0 +1,118 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.List;
+import java.util.Scanner;
+
+
+public class Main {
+	public static void main(String[] args) {
+		
+		
+		
+		List<Student> students = new ArrayList<Student>();
+		
+		
+		Calendar cal = Calendar.getInstance();
+	    cal.set(2000, 1, 1);
+	    
+		// creating and adding student1
+		Name name = new Name("burak");
+		Surname surname = new Surname("sarac");	
+		Birthdate birthdate = new Birthdate(cal);
+		Score score = new Score(3);
+		Classroom classroom = new Classroom("java101");
+		Student student1 = new Student(name, surname, birthdate, score, classroom);
+		students.add(student1);
+		
+		// creating and adding student2
+		name = new Name("tomas");
+		surname = new Surname("lucovic");	
+		birthdate = new Birthdate(cal);
+		score = new Score(3);
+		classroom = new Classroom("java101");
+		Student student2 = new Student(name, surname, birthdate, score, classroom);
+		students.add(student2);
+		
+		// creating and adding student3
+		name = new Name("jan");
+		surname = new Surname("havranek");	
+		birthdate = new Birthdate(cal);
+		score = new Score(3);
+		classroom = new Classroom("java101");
+		Student student3 = new Student(name, surname, birthdate, score, classroom);
+		students.add(student3);
+		
+		// creating and adding student4
+		name = new Name("matej");
+		surname = new Surname("duras");	
+		birthdate = new Birthdate(cal);
+		score = new Score(3);
+		classroom = new Classroom("java101");
+		Student student4 = new Student(name, surname, birthdate, score, classroom);
+		students.add(student4);
+		
+		// creating and adding student5
+		name = new Name("viktor");
+		surname = new Surname("tymoshchuk");	
+		birthdate = new Birthdate(cal);
+		score = new Score(3);
+		classroom = new Classroom("java101");
+		Student student5 = new Student(name, surname, birthdate, score, classroom);
+		students.add(student5);
+						
+
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("Enter the name: ");
+		String nameprompt = scan.nextLine();
+		System.out.println("Enter the surname: ");
+		String surnameprompt = scan.nextLine();
+		
+		name = new Name(nameprompt);
+		surname = new Surname(surnameprompt);
+		
+		Student studentprompt = new Student(name, surname, birthdate, score, classroom);
+		
+		
+		Student student100 = student5;
+		
+		students.add(studentprompt);
+		
+		if (students.contains(studentprompt)) {
+			System.out.println("Succces");
+		} else {
+			System.out.println("Failure");
+		}
+		
+		
+
+		//
+		//then create a Main class with main method. After create an array of students and add those students:
+
+		//	Student1: name: burak surname:sarac bdate: 01.01.2000 score:3, classroom:java101
+
+
+		//	Student2: name: tomas surname:lucovic bdate: 01.01.2000 score:3, classroom:java101
+
+
+		//	Student3: name: jan surname:havranek bdate: 01.01.2000 score:3, classroom:java101
+
+
+		//	Student4: name: matej surname:duras bdate: 01.01.2000 score:3, classroom:java101
+
+
+		//	Student5: name: viktor surname:tymoshchuk bdate: 01.01.2000 score:3, classroom:java101
+
+
+		//	when you write 3 class, then ask user to enter student name and surname, if student doesnt exist throw a nullpointer exception
+
+
+		//	If you need anything just please let me know
+
+		
+		
+		
+	}
+
+}

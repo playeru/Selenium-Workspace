@@ -1,14 +1,17 @@
+import java.util.Calendar;
+
 
 public class Human {
 	
-	private Name name;
-	private Surname surname;
-	private Birthdate birthdate;
+	protected String name;
+	protected String surname;
+	protected Calendar birthdate;
 	
-	public Human(Name name, Surname surname, Birthdate birthdate) {
+	public Human(String name, String surname, Calendar birthdate) {
 		this.name=name;
 		this.surname=surname;
 		this.birthdate=birthdate;
 	}
+	
 
 }
